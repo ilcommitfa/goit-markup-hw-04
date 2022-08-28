@@ -332,22 +332,6 @@ header {
     overflow: hidden;
 }
 
-.email::before {
-    display: inline-flex;
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-image: url("../envelope.svg");
-    background-size: cover;
-    background-position: center;
-   
-}
-
-.header-address.email:hover::before {
-    fill: currentColor;
-}
-
 .thumb {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -357,36 +341,42 @@ header {
     background-color: #F5F4FA;
 }
 
+.social-link {
+    display: flex;
+    color: #AFB1B8;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-link:hover {
+    color: #FFFFFF;
+    background-color: var(--main-btn-bgc)
+}
+
 .icon {
     display: block;
     margin: auto;
+    fill: currentColor;
 }
 
-.social-links {
+.social-list {
     display: flex;
     justify-content: center;
 }
 
-.social-links li {
+.social-list li {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     margin-bottom: 30px;
-    fill: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
-.social-links li:hover,
-.social-links li:focus {
-    background-color: var(--main-btn-bgc);
-   
-}
-
-
-.social-links li:not(:last-child) {
+.social-list li:not(:last-child) {
     margin-right: 10px;
-    fill: #FFFFFF;
 }
     
