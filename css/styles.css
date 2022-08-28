@@ -277,7 +277,7 @@ h1,h2,h3,p,ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .footer {
@@ -358,6 +358,35 @@ header {
 }
 
 .icon {
-   display: block;
-   margin: auto;
+    display: block;
+    margin: auto;
 }
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    fill: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links li:hover,
+.social-links li:focus {
+    background-color: var(--main-btn-bgc);
+   
+}
+
+
+.social-links li:not(:last-child) {
+    margin-right: 10px;
+    fill: #FFFFFF;
+}
+    
