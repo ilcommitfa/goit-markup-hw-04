@@ -71,6 +71,10 @@ h1,h2,h3,p,ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
+    display: inline-flex;
+    gap: 10px;
+    vertical-align: middle;
+    align-items: center;
 }
 
 .address {
@@ -299,21 +303,23 @@ header {
 
 .container.header {
     display: flex;
+    align-items: center;
+
 }
 
-.site-nav,
-.site-nav-list {
+.site-nav {
     display: flex;
     align-items: center;
-    padding-left: 0;
 }
 
-.site-nav-list li:not(:last-child) {
-    margin-right: 50px;
+.site-nav-list {
+    display: flex;
+    gap: 50px;
 }
 
 .site-nav-list.contacts {
     margin-left: auto;
+    gap: 30px;
 }
 
 .address-list li:not(:last-child) {
@@ -357,7 +363,8 @@ header {
     border-radius: 50%;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
     color: #FFFFFF;
     background-color: var(--main-btn-bgc)
 }
@@ -383,7 +390,8 @@ header {
     border-radius: 4px;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     color: var(--main-btn-bgc);
     border: 1px solid var(--main-btn-bgc);
 }
@@ -392,3 +400,9 @@ header {
     margin: auto;
     fill: currentColor;
 }
+
+.icon-address {
+    display: inline-block;
+    fill: currentColor;
+}
+
