@@ -231,7 +231,8 @@ h1,h2,h3,p,ul {
 }
 
 .services-title,
-.team-title {
+.team-title,
+.clients-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -367,4 +368,27 @@ header {
     fill: currentColor;
 }
 
+.clients-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
 
+.clients-link {
+    display: flex;
+    color: #AFB1B8;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-link:hover {
+    color: var(--main-btn-bgc);
+    border: 1px solid var(--main-btn-bgc);
+}
+
+.icon-clients {
+    margin: auto;
+    fill: currentColor;
+}
