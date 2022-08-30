@@ -111,6 +111,7 @@ h1,h2,h3,h4,p,ul {
     padding-left: 22px;
     padding-right: 22px;
     min-height: 38px;
+    cursor: pointer;
 }
 
 .hero-btn {
@@ -125,19 +126,19 @@ h1,h2,h3,h4,p,ul {
     min-width: 216px;
     min-height: 50px;
     border-color: transparent;
+    cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: #188CE8;
-    cursor: pointer;
+    
 }
 
 .btn:hover,
 .btn:focus {
     color: var(--main-bg-color);
     background-color: var(--main-btn-bgc);
-    cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -186,11 +187,8 @@ h1,h2,h3,h4,p,ul {
     gap: 30px;
 }
 
-.project-list li {
-    border-bottom:  1px solid #EEEEEE;
-}
-
-.project-list li:hover {
+.project-list a:hover {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -199,9 +197,7 @@ h1,h2,h3,h4,p,ul {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-    margin-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
 }
 
 .project-type {
@@ -209,16 +205,15 @@ h1,h2,h3,h4,p,ul {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
-    margin-left: 24px;
-    margin-bottom: 20px;
 }
 
 .pecularity-list {
     display: flex;
+    gap: 30px;
 }
 
-.pecularity-list-item:not(:last-child) {
-    margin-right: 30px;
+.pecularity-list-item {
+    flex-basis: calc((100%-90px)/4);
 }
 
 .pecularity-title {
@@ -343,12 +338,13 @@ header {
 }
 
 .thumb {
-    padding-top: 25px;
-    padding-bottom: 25px;
     margin-bottom: 30px;
     border-radius: 4px;
-    width: 270px;
+    height: 120px;
     background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-list {
@@ -359,6 +355,8 @@ header {
 
 .social-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
     color: #AFB1B8;
     width: 44px;
     height: 44px;
@@ -377,21 +375,21 @@ header {
 }
 
 .icon {
-    display: block;
-    margin: auto;
     fill: currentColor;
 }
 
 .clients-list {
     display: flex;
     gap: 30px;
-    justify-content: center;
+}
+
+.clients-list li {
+    flex-basis: calc((100%-150px)/4);
 }
 
 .clients-link {
     display: flex;
     color: #AFB1B8;
-    width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -422,8 +420,15 @@ header {
     margin-bottom: 20px;
 }
 
-.footer-list {
+.footer-menu {
     display: flex;
     gap: 70px;
     align-items: baseline;
+}
+
+.project-container {
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
