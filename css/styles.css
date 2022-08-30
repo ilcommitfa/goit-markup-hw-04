@@ -138,6 +138,7 @@ h1,h2,h3,h4,p,ul {
     color: var(--main-bg-color);
     background-color: var(--main-btn-bgc);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn-filter {
@@ -167,9 +168,6 @@ h1,h2,h3,h4,p,ul {
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/hero-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cov;
-    background-position: center;
 }
 
 .hero-title {
@@ -190,6 +188,10 @@ h1,h2,h3,h4,p,ul {
 
 .project-list li {
     border-bottom:  1px solid #EEEEEE;
+}
+
+.project-list li:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-client {
