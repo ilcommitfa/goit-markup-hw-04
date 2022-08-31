@@ -213,7 +213,7 @@ h1,h2,h3,h4,p,ul {
 }
 
 .pecularity-list-item {
-    flex-basis: calc((100%-90px)/4);
+    flex-basis: calc((100% - 90px)/4);
 }
 
 .pecularity-title {
@@ -384,7 +384,7 @@ header {
 }
 
 .clients-list li {
-    flex-basis: calc((100%-150px)/4);
+    flex-basis: calc((100% - 150px)/4);
 }
 
 .clients-link {
